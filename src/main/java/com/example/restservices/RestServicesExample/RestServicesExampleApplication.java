@@ -12,7 +12,7 @@ import org.springframework.web.servlet.support.SpringBootServletInitializer;
 import java.util.Locale;
 
 @SpringBootApplication
-public class RestServicesExampleApplication extend SpringBootServletInitializer {
+public class RestServicesExampleApplication extends SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestServicesExampleApplication.class, args);
