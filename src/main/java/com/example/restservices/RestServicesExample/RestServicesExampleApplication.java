@@ -13,11 +13,21 @@ import java.util.Locale;
 
 @SpringBootApplication
 public class RestServicesExampleApplication extends SpringBootServletInitializer {
-
-	public static void main(String[] args) {
+    @Override
+    protected SpringApplicationBuilder configure(
+      SpringApplicationBuilder builder) {
+        return builder.sources(RestServicesExampleApplication.class);
+    }
+ 
+    public static void main(String[] args) {
+        SpringApplication sa = new SpringApplication(
+          RestServicesExampleApplication.class);
+        sa.run(args);
+    }
+	/*public static void main(String[] args) {
 		SpringApplication.run(RestServicesExampleApplication.class, args);
 	}
-
+*/
 	/*Use this method is reading locale from Request Header*/
 	/*@Bean
 	public LocaleResolver localeResolver(){
