@@ -8,11 +8,11 @@ import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.servlet.LocaleResolver;
 import org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver;
 import org.springframework.web.servlet.i18n.SessionLocaleResolver;
-
+import org.springframework.web.servlet.support.SpringBootServletInitializer;
 import java.util.Locale;
 
 @SpringBootApplication
-public class RestServicesExampleApplication {
+public class RestServicesExampleApplication extend SpringBootServletInitializer {
 
 	public static void main(String[] args) {
 		SpringApplication.run(RestServicesExampleApplication.class, args);
